@@ -18,6 +18,8 @@
 - **Components**: Simple, functional card patterns with subtle borders and hover states
 - **Typography**: Clear hierarchy with semantic headings and readable font sizes
 - **Motion**: Minimal, purposeful transitions focused on usability over flashiness
+- **Stats Cards**: Unique, service-specific metrics (order counts, cost savings, delivery rates)
+- **Navigation**: Fixed header with transparent-to-solid transition and CSS-only dropdowns
 
 ### Page Structure Patterns
 **Service Pages Follow Consistent Order:**
@@ -43,6 +45,8 @@
 - **CTAs**: Strategic placement with orange gradient buttons and clear call-to-action text
 - **Forms**: Validated contact forms with proper error handling and accessibility
 - **Related Content**: Cross-linking between services for improved discovery and SEO
+- **Service Pages**: Client Components with unique statCard props for customized metrics
+- **FAQ Layout**: Side-by-side column layout for better content organization and readability
 
 ### Content Patterns
 - **Legal-Safe Language**: "Experienced, qualified, trained" rather than "licensed/certified" unless verified

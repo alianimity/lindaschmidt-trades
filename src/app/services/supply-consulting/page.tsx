@@ -1,4 +1,4 @@
-import type { Metadata } from "next"
+"use client"
 import { ServiceHero } from "@/components/sections/service-hero"
 import { ServiceOverview } from "@/components/sections/service-overview"
 import { WhatsIncluded } from "@/components/sections/whats-included"
@@ -8,10 +8,6 @@ import { CTASection } from "@/components/sections/cta-section"
 import { RelatedServices } from "@/components/sections/related-services"
 import { Users, TrendingUp, FileText, Target, BarChart, Lightbulb } from "lucide-react"
 
-export const metadata: Metadata = {
-  title: "Consulting on Supply Optimization",
-  description: "Expert supply chain consulting and procurement optimization services. Strategic advice for cost savings and efficiency improvements.",
-}
 
 const includedFeatures = [
   {
@@ -115,7 +111,7 @@ export default function SupplyConsultingPage() {
         title="Consulting on Supply Optimization"
         subtitle="Expert guidance for smarter procurement"
         description="Strategic consulting on procurement optimization, cost-saving tactics, and supply chain improvements. Professional advice delivered through virtual sessions and detailed reports."
-        priceRange="$500–$20,000+"
+        priceRange="$500–$25,000+"
         icon={Users}
       />
       
@@ -125,6 +121,11 @@ export default function SupplyConsultingPage() {
         applications={{
           b2c: "Guidance for individuals (home office budget optimization, DIY project planning, personal equipment strategies)",
           b2b: "Business audits and strategy development (vendor selection, procurement process improvement, supply chain optimization)"
+        }}
+        statCard={{
+          number: "30%",
+          label: "Average Cost Savings",
+          description: "Typical procurement cost reduction achieved"
         }}
       />
       

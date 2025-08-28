@@ -1,4 +1,4 @@
-import type { Metadata } from "next"
+"use client"
 import { ServiceHero } from "@/components/sections/service-hero"
 import { ServiceOverview } from "@/components/sections/service-overview"
 import { WhatsIncluded } from "@/components/sections/whats-included"
@@ -8,10 +8,6 @@ import { CTASection } from "@/components/sections/cta-section"
 import { RelatedServices } from "@/components/sections/related-services"
 import { RefreshCw, Scale, Users, FileText, Shield, HandHeart } from "lucide-react"
 
-export const metadata: Metadata = {
-  title: "Trade & Barter Facilitation",
-  description: "Professional trade and barter facilitation services. Asset valuation, partner matching, and secure exchange coordination for businesses and individuals.",
-}
 
 const includedFeatures = [
   {
@@ -126,6 +122,11 @@ export default function TradeBarter() {
         applications={{
           b2c: "Individuals trading personal items (old tools for new IT gear, furniture exchanges, hobby equipment swaps)",
           b2b: "Businesses exchanging inventory or assets (office furniture for manufacturing parts, equipment upgrades)"
+        }}
+        statCard={{
+          number: "$2.5M",
+          label: "Trade Value Facilitated",
+          description: "Successfully matched and coordinated exchanges"
         }}
       />
       

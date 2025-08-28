@@ -1,4 +1,4 @@
-import type { Metadata } from "next"
+"use client"
 import { ServiceHero } from "@/components/sections/service-hero"
 import { ServiceOverview } from "@/components/sections/service-overview"
 import { WhatsIncluded } from "@/components/sections/whats-included"
@@ -8,10 +8,6 @@ import { CTASection } from "@/components/sections/cta-section"
 import { RelatedServices } from "@/components/sections/related-services"
 import { Settings, Target, Search, Wrench, Truck, Clock } from "lucide-react"
 
-export const metadata: Metadata = {
-  title: "Customized Procurement & Bundling",
-  description: "Tailored procurement solutions and custom bundling services. Creating personalized packages based on your specifications with optimal supplier selection.",
-}
 
 const includedFeatures = [
   {
@@ -126,6 +122,11 @@ export default function CustomProcurementPage() {
         applications={{
           b2c: "Personalized bundles for home projects (custom DIY toolkits, home office setups with specific requirements)",
           b2b: "Enterprise-specific packages (IT equipment bundles for new offices, specialized tool sets for trades)"
+        }}
+        statCard={{
+          number: "150+",
+          label: "Custom Bundles Created",
+          description: "Tailored solutions from simple to complex"
         }}
       />
       

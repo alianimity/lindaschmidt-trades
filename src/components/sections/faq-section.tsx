@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { ChevronDown } from "lucide-react"
 
-const faqs = [
+const leftFaqs = [
   {
     question: "What types of goods do you source and trade?",
     answer: "We specialize in non-regulated goods including tools, office furniture, IT equipment, manufacturing supplies, and consumables. We focus on reliable, quality products from verified suppliers across various industries."
@@ -23,7 +23,10 @@ const faqs = [
   {
     question: "How does the trade and barter service work?",
     answer: "We facilitate asset exchanges by valuing items, matching trading partners, and managing the exchange process. This includes basic appraisals, legal review when needed, and coordination of the actual trade."
-  },
+  }
+]
+
+const rightFaqs = [
   {
     question: "Do you hold inventory?",
     answer: "No, we operate through dropshipping from verified suppliers, which keeps our costs low and allows us to offer competitive pricing. This also means we can source a wide variety of products without inventory limitations."

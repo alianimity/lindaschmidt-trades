@@ -1,4 +1,4 @@
-import type { Metadata } from "next"
+"use client"
 import { ServiceHero } from "@/components/sections/service-hero"
 import { ServiceOverview } from "@/components/sections/service-overview"
 import { WhatsIncluded } from "@/components/sections/whats-included"
@@ -8,10 +8,6 @@ import { CTASection } from "@/components/sections/cta-section"
 import { RelatedServices } from "@/components/sections/related-services"
 import { Truck, MapPin, Shield, Globe, Package, Clock } from "lucide-react"
 
-export const metadata: Metadata = {
-  title: "Logistics & Fulfillment Coordination",
-  description: "Professional logistics and fulfillment coordination services. Complete shipping management, tracking, and delivery coordination from suppliers to clients.",
-}
 
 const includedFeatures = [
   {
@@ -117,7 +113,7 @@ export default function LogisticsPage() {
         title="Logistics & Fulfillment Coordination"
         subtitle="Seamless delivery management"
         description="Complete logistics coordination from suppliers to your door. We manage shipping, tracking, customs, and delivery timing to ensure your orders arrive safely and on schedule."
-        priceRange="$500–$30,000+"
+        priceRange="$500–$20,000+"
         icon={Truck}
       />
       
@@ -127,6 +123,11 @@ export default function LogisticsPage() {
         applications={{
           b2c: "Fast, tracked delivery for personal orders (home delivery of equipment, furniture, or bundled products)",
           b2b: "Bulk logistics for business shipments (multi-site deliveries, warehouse coordination, international shipping)"
+        }}
+        statCard={{
+          number: "99.2%",
+          label: "On-Time Delivery Rate",
+          description: "Reliable coordination across all 50 states"
         }}
       />
       

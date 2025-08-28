@@ -9,7 +9,7 @@ export function Hero() {
   return (
     <section className="relative min-h-[90vh] flex items-center justify-center bg-gradient-to-br from-neutral-900 via-neutral-800 to-black overflow-hidden">
       {/* Background decoration */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[var(--brand-support)]/20 to-[var(--brand-primary)]/10" />
+      <div className="absolute inset-0 bg-gradient-to-br from-brand-support/20 to-brand-primary/10" />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(0,0,0,0.3)_100%)]" />
       
       {/* Content */}

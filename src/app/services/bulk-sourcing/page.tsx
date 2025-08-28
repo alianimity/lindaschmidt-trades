@@ -1,4 +1,4 @@
-import type { Metadata } from "next"
+"use client"
 import { ServiceHero } from "@/components/sections/service-hero"
 import { ServiceOverview } from "@/components/sections/service-overview"
 import { WhatsIncluded } from "@/components/sections/whats-included"
@@ -8,10 +8,6 @@ import { CTASection } from "@/components/sections/cta-section"
 import { RelatedServices } from "@/components/sections/related-services"
 import { Package, Users, Shield, Truck, CheckCircle, Clock } from "lucide-react"
 
-export const metadata: Metadata = {
-  title: "Bulk Sourcing & Wholesale Supply",
-  description: "Professional bulk sourcing and wholesale supply services. Direct dropshipping from verified suppliers with quality checks and competitive pricing.",
-}
 
 const includedFeatures = [
   {
@@ -125,6 +121,11 @@ export default function BulkSourcingPage() {
         applications={{
           b2c: "Individuals purchasing for personal use (home workshop tools, office setups for remote workers)",
           b2b: "Businesses acquiring stock for operations (contractor tools, corporate office restocks)"
+        }}
+        statCard={{
+          number: "200+",
+          label: "Bulk Orders Fulfilled",
+          description: "From 10-item orders to 200+ item shipments"
         }}
       />
       

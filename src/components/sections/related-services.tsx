@@ -46,9 +46,9 @@ export function RelatedServices({ services }: RelatedServicesProps) {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
             >
-              <Card className="h-full group hover:border-[var(--brand-primary)]/40 transition-all duration-300">
+              <Card className="h-full group hover:border-brand-primary/40 transition-all duration-300">
                 <CardHeader>
-                  <CardTitle className="text-xl group-hover:text-[var(--brand-primary)] transition-colors">
+                  <CardTitle className="text-xl group-hover:text-brand-primary transition-colors">
                     {service.title}
                   </CardTitle>
                   <CardDescription className="text-neutral-300">

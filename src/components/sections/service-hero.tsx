@@ -17,7 +17,7 @@ export function ServiceHero({ title, subtitle, description, priceRange, icon: Ic
   return (
     <section className="relative min-h-[70vh] flex items-center justify-center bg-gradient-to-br from-neutral-900 via-neutral-800 to-black overflow-hidden">
       {/* Background decoration */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[var(--brand-support)]/20 to-[var(--brand-primary)]/10" />
+      <div className="absolute inset-0 bg-gradient-to-br from-brand-support/20 to-brand-primary/10" />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(0,0,0,0.3)_100%)]" />
       
       {/* Content */}
@@ -30,8 +30,8 @@ export function ServiceHero({ title, subtitle, description, priceRange, icon: Ic
         >
           {/* Icon */}
           <div className="flex justify-center">
-            <div className="p-6 rounded-2xl bg-[var(--brand-support)] border border-[var(--brand-primary)]/30">
-              <Icon className="h-12 w-12 text-[var(--brand-primary)]" />
+            <div className="p-6 rounded-2xl bg-brand-support border border-brand-primary/30">
+              <Icon className="h-12 w-12 text-brand-primary" />
             </div>
           </div>
 
@@ -40,7 +40,7 @@ export function ServiceHero({ title, subtitle, description, priceRange, icon: Ic
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
               {title}
             </h1>
-            <p className="text-xl md:text-2xl text-[var(--brand-primary)] font-medium">
+            <p className="text-xl md:text-2xl text-brand-primary font-medium">
               {subtitle}
             </p>
           </div>
@@ -51,9 +51,9 @@ export function ServiceHero({ title, subtitle, description, priceRange, icon: Ic
           </p>
 
           {/* Price range */}
-          <div className="inline-flex items-center space-x-4 px-6 py-3 rounded-full bg-[var(--brand-primary)]/20 border border-[var(--brand-primary)]/30">
+          <div className="inline-flex items-center space-x-4 px-6 py-3 rounded-full bg-brand-primary/20 border border-brand-primary/30">
             <span className="text-sm text-neutral-300">Starting from</span>
-            <span className="text-2xl font-bold text-[var(--brand-primary)]">{priceRange}</span>
+            <span className="text-2xl font-bold text-brand-primary">{priceRange}</span>
           </div>
 
           {/* CTA Buttons */}

@@ -53,18 +53,18 @@ export function ServicePricing({ tiers }: ServicePricingProps) {
             >
               {tier.popular && (
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                  <div className="flex items-center space-x-1 bg-[var(--brand-primary)] text-black px-3 py-1 rounded-full text-sm font-medium">
+                  <div className="flex items-center space-x-1 bg-brand-primary text-black px-3 py-1 rounded-full text-sm font-medium">
                     <Star className="h-3 w-3 fill-current" />
                     <span>Most Popular</span>
                   </div>
                 </div>
               )}
               
-              <Card className={`h-full ${tier.popular ? 'border-[var(--brand-primary)]/50 shadow-lg' : ''} hover:border-[var(--brand-primary)]/40 transition-all duration-300`}>
+              <Card className={`h-full ${tier.popular ? 'border-brand-primary/50 shadow-lg' : ''} hover:border-brand-primary/40 transition-all duration-300`}>
                 <CardHeader className="text-center">
                   <div className="flex items-center justify-between mb-4">
                     <CardTitle className="text-xl text-white">{tier.name}</CardTitle>
-                    <div className="text-2xl font-bold text-[var(--brand-primary)]">
+                    <div className="text-2xl font-bold text-brand-primary">
                       {formatPriceRange(tier.priceRange[0], tier.priceRange[1])}
                     </div>
                   </div>
@@ -78,22 +78,22 @@ export function ServicePricing({ tiers }: ServicePricingProps) {
                   <ul className="space-y-3">
                     {tier.features.map((feature, i) => (
                       <li key={i} className="flex items-start space-x-3">
-                        <Check className="h-4 w-4 text-[var(--brand-primary)] mt-0.5 flex-shrink-0" />
+                        <Check className="h-4 w-4 text-brand-primary mt-0.5 flex-shrink-0" />
                         <span className="text-sm text-neutral-400">{feature}</span>
                       </li>
                     ))}
                   </ul>
                   
                   {/* Example */}
-                  <div className="p-4 rounded-lg bg-[var(--brand-primary)]/10 border border-[var(--brand-primary)]/20">
-                    <p className="text-sm font-medium text-[var(--brand-primary)] mb-1">Example:</p>
+                  <div className="p-4 rounded-lg bg-brand-primary/10 border border-brand-primary/20">
+                    <p className="text-sm font-medium text-brand-primary mb-1">Example:</p>
                     <p className="text-sm text-neutral-400">{tier.example}</p>
                   </div>
                   
                   {/* CTA Button */}
                   <Button 
                     asChild 
-                    className={`w-full ${tier.popular ? 'bg-[var(--brand-primary)] hover:bg-[var(--brand-primary)]/90' : ''}`}
+                    className={`w-full ${tier.popular ? 'bg-brand-primary hover:bg-brand-primary/90' : ''}`}
                     variant={tier.popular ? 'default' : 'outline'}
                   >
                     <Link href="/contact">
