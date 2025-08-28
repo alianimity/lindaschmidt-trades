@@ -47,13 +47,13 @@ const faqs = [
 ]
 
 export function FAQSection() {
-  const [openItems, setOpenItems] = useState<number[]>([])
+  const [openItems, setOpenItems] = useState<string[]>([])
 
-  const toggleItem = (index: number) => {
+  const toggleItem = (id: string) => {
     setOpenItems(prev => 
-      prev.includes(index) 
-        ? prev.filter(i => i !== index)
-        : [...prev, index]
+      prev.includes(id) 
+        ? prev.filter(i => i !== id)
+        : [...prev, id]
     )
   }
 
@@ -71,31 +71,63 @@ export function FAQSection() {
           </p>
         </div>
 
-        {/* FAQ Items */}
-        <div className="max-w-4xl mx-auto space-y-4">
-          {faqs.map((faq, index) => (
-            <div key={index} className="bg-brand-support rounded-xl border border-brand-primary/20 overflow-hidden">
-              <button
-                onClick={() => toggleItem(index)}
-                className="w-full px-6 py-6 text-left flex items-center justify-between hover:bg-brand-primary/5 transition-colors duration-200"
-              >
-                <h3 className="text-lg font-medium text-white pr-4">
-                  {faq.question}
-                </h3>
-                <ChevronDown className={`h-5 w-5 text-brand-primary flex-shrink-0 transition-transform duration-200 ${
-                  openItems.includes(index) ? 'rotate-180' : ''
-                }`} />
-              </button>
-              
-              {openItems.includes(index) && (
-                <div className="px-6 pb-6 border-t border-brand-primary/10">
-                  <p className="text-neutral-300 leading-relaxed pt-4">
-                    {faq.answer}
-                  </p>
+        {/* FAQ Items - Two Columns */}
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {/* Left Column */}
+            <div className="space-y-4">
+              {leftFaqs.map((faq, index) => (
+                <div key={`left-${index}`} className="bg-brand-support rounded-xl border border-brand-primary/20 overflow-hidden">
+                  <button
+                    onClick={() => toggleItem(`left-${index}`)}
+                    className="w-full px-6 py-6 text-left flex items-center justify-between hover:bg-brand-primary/5 transition-colors duration-200"
+                  >
+                    <h3 className="text-lg font-medium text-white pr-4">
+                      {faq.question}
+                    </h3>
+                    <ChevronDown className={`h-5 w-5 text-brand-primary flex-shrink-0 transition-transform duration-200 ${
+                      openItems.includes(`left-${index}`) ? 'rotate-180' : ''
+                    }`} />
+                  </button>
+                  
+                  {openItems.includes(`left-${index}`) && (
+                    <div className="px-6 pb-6 border-t border-brand-primary/10">
+                      <p className="text-neutral-300 leading-relaxed pt-4">
+                        {faq.answer}
+                      </p>
+                    </div>
+                  )}
                 </div>
-              )}
+              ))}
             </div>
-          ))}
+
+            {/* Right Column */}
+            <div className="space-y-4">
+              {rightFaqs.map((faq, index) => (
+                <div key={`right-${index}`} className="bg-brand-support rounded-xl border border-brand-primary/20 overflow-hidden">
+                  <button
+                    onClick={() => toggleItem(`right-${index}`)}
+                    className="w-full px-6 py-6 text-left flex items-center justify-between hover:bg-brand-primary/5 transition-colors duration-200"
+                  >
+                    <h3 className="text-lg font-medium text-white pr-4">
+                      {faq.question}
+                    </h3>
+                    <ChevronDown className={`h-5 w-5 text-brand-primary flex-shrink-0 transition-transform duration-200 ${
+                      openItems.includes(`right-${index}`) ? 'rotate-180' : ''
+                    }`} />
+                  </button>
+                  
+                  {openItems.includes(`right-${index}`) && (
+                    <div className="px-6 pb-6 border-t border-brand-primary/10">
+                      <p className="text-neutral-300 leading-relaxed pt-4">
+                        {faq.answer}
+                      </p>
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
 
         {/* Contact CTA */}

@@ -34,8 +34,8 @@ export function AboutMission() {
             className="space-y-6"
           >
             <div className="flex items-center space-x-4">
-              <div className="p-3 rounded-full bg-[var(--brand-primary)]/20 border border-[var(--brand-primary)]/30">
-                <Target className="h-8 w-8 text-[var(--brand-primary)]" />
+              <div className="p-3 rounded-full bg-brand-primary/20 border border-brand-primary/30">
+                <Target className="h-8 w-8 text-brand-primary" />
               </div>
               <h3 className="text-2xl font-bold text-white">Our Mission</h3>
             </div>
@@ -45,18 +45,18 @@ export function AboutMission() {
               competitive pricing, and seamless fulfillment to support professional and personal projects.
             </p>
             <div className="space-y-3">
-              <h4 className="text-lg font-semibold text-[var(--brand-primary)]">Core Commitments:</h4>
+              <h4 className="text-lg font-semibold text-brand-primary">Core Commitments:</h4>
               <ul className="space-y-2 text-neutral-400">
                 <li className="flex items-center">
-                  <span className="w-2 h-2 bg-[var(--brand-primary)] rounded-full mr-3" />
+                  <span className="w-2 h-2 bg-brand-primary rounded-full mr-3" />
                   Reliable, efficient sourcing solutions
                 </li>
                 <li className="flex items-center">
-                  <span className="w-2 h-2 bg-[var(--brand-primary)] rounded-full mr-3" />
+                  <span className="w-2 h-2 bg-brand-primary rounded-full mr-3" />
                   Competitive pricing and transparent costs
                 </li>
                 <li className="flex items-center">
-                  <span className="w-2 h-2 bg-[var(--brand-primary)] rounded-full mr-3" />
+                  <span className="w-2 h-2 bg-brand-primary rounded-full mr-3" />
                   Professional service from consultation to delivery
                 </li>
               </ul>
@@ -72,8 +72,8 @@ export function AboutMission() {
             className="space-y-6"
           >
             <div className="flex items-center space-x-4">
-              <div className="p-3 rounded-full bg-[var(--brand-primary)]/20 border border-[var(--brand-primary)]/30">
-                <Eye className="h-8 w-8 text-[var(--brand-primary)]" />
+              <div className="p-3 rounded-full bg-brand-primary/20 border border-brand-primary/30">
+                <Eye className="h-8 w-8 text-brand-primary" />
               </div>
               <h3 className="text-2xl font-bold text-white">Our Vision</h3>
             </div>
@@ -83,18 +83,18 @@ export function AboutMission() {
               enterprise-scale supply deals.
             </p>
             <div className="space-y-3">
-              <h4 className="text-lg font-semibold text-[var(--brand-primary)]">Future Goals:</h4>
+              <h4 className="text-lg font-semibold text-brand-primary">Future Goals:</h4>
               <ul className="space-y-2 text-neutral-400">
                 <li className="flex items-center">
-                  <span className="w-2 h-2 bg-[var(--brand-primary)] rounded-full mr-3" />
+                  <span className="w-2 h-2 bg-brand-primary rounded-full mr-3" />
                   Expand supplier network nationwide
                 </li>
                 <li className="flex items-center">
-                  <span className="w-2 h-2 bg-[var(--brand-primary)] rounded-full mr-3" />
+                  <span className="w-2 h-2 bg-brand-primary rounded-full mr-3" />
                   Develop innovative trading solutions
                 </li>
                 <li className="flex items-center">
-                  <span className="w-2 h-2 bg-[var(--brand-primary)] rounded-full mr-3" />
+                  <span className="w-2 h-2 bg-brand-primary rounded-full mr-3" />
                   Lead in sustainable procurement practices
                 </li>
               </ul>
@@ -110,8 +110,8 @@ export function AboutMission() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="text-center mt-16"
         >
-          <div className="inline-flex items-center space-x-3 p-6 rounded-2xl bg-[var(--brand-support)] border border-[var(--brand-primary)]/20">
-            <Heart className="h-6 w-6 text-[var(--brand-primary)]" />
+          <div className="inline-flex items-center space-x-3 p-6 rounded-2xl bg-brand-support border border-brand-primary/20">
+            <Heart className="h-6 w-6 text-brand-primary" />
             <p className="text-xl font-medium text-white">
               &ldquo;Trading Tools for Every Trade – From Home to Enterprise&rdquo;
             </p>

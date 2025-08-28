@@ -56,18 +56,18 @@ export function AboutStory() {
             </div>
 
             <div className="space-y-4">
-              <h4 className="text-xl font-semibold text-[var(--brand-primary)]">Key Differentiators:</h4>
+              <h4 className="text-xl font-semibold text-brand-primary">Key Differentiators:</h4>
               <ul className="space-y-3 text-neutral-400">
                 <li className="flex items-start">
-                  <span className="w-2 h-2 bg-[var(--brand-primary)] rounded-full mr-3 mt-2" />
+                  <span className="w-2 h-2 bg-brand-primary rounded-full mr-3 mt-2" />
                   <span><strong className="text-white">Low-Risk Model:</strong> No inventory holding via dropshipping reduces costs and enables competitive pricing</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="w-2 h-2 bg-[var(--brand-primary)] rounded-full mr-3 mt-2" />
+                  <span className="w-2 h-2 bg-brand-primary rounded-full mr-3 mt-2" />
                   <span><strong className="text-white">Verified Suppliers:</strong> Extensive network of trusted partners ensures quality and reliability</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="w-2 h-2 bg-[var(--brand-primary)] rounded-full mr-3 mt-2" />
+                  <span className="w-2 h-2 bg-brand-primary rounded-full mr-3 mt-2" />
                   <span><strong className="text-white">Scalable Solutions:</strong> From $500 individual orders to $170,000+ enterprise projects</span>
                 </li>
               </ul>
@@ -84,9 +84,9 @@ export function AboutStory() {
           >
             {/* Milestone Cards */}
             <div className="space-y-6">
-              <div className="flex items-center space-x-4 p-6 rounded-2xl bg-[var(--brand-support)] border border-[var(--brand-primary)]/20">
-                <div className="p-3 rounded-full bg-[var(--brand-primary)]/20 border border-[var(--brand-primary)]/30 flex-shrink-0">
-                  <Clock className="h-6 w-6 text-[var(--brand-primary)]" />
+              <div className="flex items-center space-x-4 p-6 rounded-2xl bg-brand-support border border-brand-primary/20">
+                <div className="p-3 rounded-full bg-brand-primary/20 border border-brand-primary/30 flex-shrink-0">
+                  <Clock className="h-6 w-6 text-brand-primary" />
                 </div>
                 <div>
                   <h4 className="text-lg font-semibold text-white">10+ Years</h4>
@@ -94,9 +94,9 @@ export function AboutStory() {
                 </div>
               </div>
 
-              <div className="flex items-center space-x-4 p-6 rounded-2xl bg-[var(--brand-support)] border border-[var(--brand-primary)]/20">
-                <div className="p-3 rounded-full bg-[var(--brand-primary)]/20 border border-[var(--brand-primary)]/30 flex-shrink-0">
-                  <Users className="h-6 w-6 text-[var(--brand-primary)]" />
+              <div className="flex items-center space-x-4 p-6 rounded-2xl bg-brand-support border border-brand-primary/20">
+                <div className="p-3 rounded-full bg-brand-primary/20 border border-brand-primary/30 flex-shrink-0">
+                  <Users className="h-6 w-6 text-brand-primary" />
                 </div>
                 <div>
                   <h4 className="text-lg font-semibold text-white">500+ Projects</h4>
@@ -104,9 +104,9 @@ export function AboutStory() {
                 </div>
               </div>
 
-              <div className="flex items-center space-x-4 p-6 rounded-2xl bg-[var(--brand-support)] border border-[var(--brand-primary)]/20">
-                <div className="p-3 rounded-full bg-[var(--brand-primary)]/20 border border-[var(--brand-primary)]/30 flex-shrink-0">
-                  <TrendingUp className="h-6 w-6 text-[var(--brand-primary)]" />
+              <div className="flex items-center space-x-4 p-6 rounded-2xl bg-brand-support border border-brand-primary/20">
+                <div className="p-3 rounded-full bg-brand-primary/20 border border-brand-primary/30 flex-shrink-0">
+                  <TrendingUp className="h-6 w-6 text-brand-primary" />
                 </div>
                 <div>
                   <h4 className="text-lg font-semibold text-white">98% Satisfaction</h4>
@@ -114,9 +114,9 @@ export function AboutStory() {
                 </div>
               </div>
 
-              <div className="flex items-center space-x-4 p-6 rounded-2xl bg-[var(--brand-support)] border border-[var(--brand-primary)]/20">
-                <div className="p-3 rounded-full bg-[var(--brand-primary)]/20 border border-[var(--brand-primary)]/30 flex-shrink-0">
-                  <Award className="h-6 w-6 text-[var(--brand-primary)]" />
+              <div className="flex items-center space-x-4 p-6 rounded-2xl bg-brand-support border border-brand-primary/20">
+                <div className="p-3 rounded-full bg-brand-primary/20 border border-brand-primary/30 flex-shrink-0">
+                  <Award className="h-6 w-6 text-brand-primary" />
                 </div>
                 <div>
                   <h4 className="text-lg font-semibold text-white">Licensed & Insured</h4>
