@@ -142,16 +142,16 @@ export function FAQSection() {
             </p>
             <div className="flex flex-col sm:flex-row gap-3 mt-4">
               <a 
-                href="mailto:info@lindaschmidttrades.com"
+                href="mailto:hello@lindaschmidt-trades.com"
                 className="px-6 py-3 bg-brand-primary text-white rounded-lg hover:bg-brand-primary/90 transition-colors duration-200 font-medium"
               >
                 Email Us
               </a>
               <a 
-                href="tel:+18605550123"
+                href="tel:+14757550400"
                 className="px-6 py-3 border border-brand-primary/30 text-white rounded-lg hover:bg-brand-primary/10 transition-colors duration-200 font-medium"
               >
-                Call (860) 555-0123
+                Call (475) 755-0400
               </a>
             </div>
           </div>

@@ -6,17 +6,24 @@ import { Mail, Phone, MapPin, Clock, MessageSquare, FileText } from "lucide-reac
 const contactMethods = [
   {
     icon: Mail,
-    title: "Email",
-    primary: "info@lindaschmidttrades.com",
+    title: "General Inquiries",
+    primary: "hello@lindaschmidt-trades.com",
     secondary: "For detailed inquiries and quotes",
-    action: "mailto:info@lindaschmidttrades.com"
+    action: "mailto:hello@lindaschmidt-trades.com"
+  },
+  {
+    icon: Mail,
+    title: "Customer Support",
+    primary: "support@lindaschmidt-trades.com",
+    secondary: "For existing project support and questions",
+    action: "mailto:support@lindaschmidt-trades.com"
   },
   {
     icon: Phone,
     title: "Phone",
-    primary: "(860) 555-0123",
+    primary: "(475) 755-0400",
     secondary: "Business hours: Mon-Fri 8AM-6PM ET",
-    action: "tel:+18605550123"
+    action: "tel:+14757550400"
   },
   {
     icon: MapPin,

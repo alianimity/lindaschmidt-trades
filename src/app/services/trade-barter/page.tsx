@@ -45,7 +45,7 @@ const includedFeatures = [
 const pricingTiers = [
   {
     name: "Basic Tier",
-    priceRange: [500, 2500],
+    priceRange: [500, 2500] as [number, number],
     description: "Small trades and simple asset exchanges",
     features: [
       "Trade value under $10,000",
@@ -58,7 +58,7 @@ const pricingTiers = [
   },
   {
     name: "Standard Tier", 
-    priceRange: [2501, 10000],
+    priceRange: [2501, 10000] as [number, number],
     description: "Medium complexity trades with enhanced services",
     features: [
       "Trade value $10,001–$50,000",
@@ -73,7 +73,7 @@ const pricingTiers = [
   },
   {
     name: "Premium Tier",
-    priceRange: [10001, 50000],
+    priceRange: [10001, 50000] as [number, number],
     description: "Large-scale or complex trades with full legal support",
     features: [
       "Trade value over $50,000",

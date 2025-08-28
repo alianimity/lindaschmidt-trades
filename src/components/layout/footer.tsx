@@ -123,13 +123,13 @@ export function Footer() {
               <div className="flex items-center space-x-3">
                 <Mail className="h-4 w-4 text-brand-primary" />
                 <span className="text-neutral-400 text-sm">
-                  info@lindaschmidttrades.com
+                  hello@lindaschmidt-trades.com
                 </span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-4 w-4 text-brand-primary" />
                 <span className="text-neutral-400 text-sm">
-                  (860) 555-0123
+                  (475) 755-0400
                 </span>
               </div>
               <div className="flex items-center space-x-3">

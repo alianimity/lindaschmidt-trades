@@ -45,7 +45,7 @@ const includedFeatures = [
 const pricingTiers = [
   {
     name: "Basic Tier",
-    priceRange: [500, 2000],
+    priceRange: [500, 2000] as [number, number],
     description: "Standard domestic shipping for small orders",
     features: [
       "Domestic shipments only",
@@ -58,7 +58,7 @@ const pricingTiers = [
   },
   {
     name: "Standard Tier", 
-    priceRange: [2001, 10000],
+    priceRange: [2001, 10000] as [number, number],
     description: "Enhanced logistics with insurance and international options",
     features: [
       "Domestic and international shipping",
@@ -73,7 +73,7 @@ const pricingTiers = [
   },
   {
     name: "Premium Tier",
-    priceRange: [10001, 30000],
+    priceRange: [10001, 30000] as [number, number],
     description: "Complex logistics for large-scale operations",
     features: [
       "Full container loads and bulk shipments",

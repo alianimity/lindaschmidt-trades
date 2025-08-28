@@ -54,11 +54,15 @@ export function ContactForm() {
   const onSubmit = async (data: ContactForm) => {
     setIsSubmitting(true)
     try {
+      // In production, this would send data to your backend
+      console.log('Form submission data:', data)
+      
       // Simulate form submission
       await new Promise(resolve => setTimeout(resolve, 2000))
       setSubmitStatus('success')
       reset()
-    } catch (error) {
+    } catch (submitError) {
+      console.error('Form submission error:', submitError)
       setSubmitStatus('error')
     } finally {
       setIsSubmitting(false)

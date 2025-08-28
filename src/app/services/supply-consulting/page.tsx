@@ -45,7 +45,7 @@ const includedFeatures = [
 const pricingTiers = [
   {
     name: "Basic Tier",
-    priceRange: [500, 1500],
+    priceRange: [500, 1500] as [number, number],
     description: "Essential consulting for individuals and small operations",
     features: [
       "1–2 hour consultation session",
@@ -58,7 +58,7 @@ const pricingTiers = [
   },
   {
     name: "Standard Tier", 
-    priceRange: [1501, 5000],
+    priceRange: [1501, 5000] as [number, number],
     description: "Comprehensive analysis for small to medium businesses",
     features: [
       "3–5 hours of detailed analysis",
@@ -72,7 +72,7 @@ const pricingTiers = [
   },
   {
     name: "Premium Tier",
-    priceRange: [5001, 20000],
+    priceRange: [5001, 20000] as [number, number],
     description: "Ongoing strategic consulting for larger operations",
     features: [
       "Multi-session engagement or quarterly plans",

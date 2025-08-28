@@ -47,7 +47,7 @@ export function ContactHero() {
               </div>
               <div className="text-center">
                 <div className="text-lg font-medium text-white">Email Us</div>
-                <div className="text-sm text-neutral-400">info@lindaschmidttrades.com</div>
+                <div className="text-sm text-neutral-400">hello@lindaschmidt-trades.com</div>
               </div>
             </div>
             
@@ -57,7 +57,7 @@ export function ContactHero() {
               </div>
               <div className="text-center">
                 <div className="text-lg font-medium text-white">Call Us</div>
-                <div className="text-sm text-neutral-400">(860) 555-0123</div>
+                <div className="text-sm text-neutral-400">(475) 755-0400</div>
               </div>
             </div>
             

@@ -99,11 +99,11 @@ export function CTASection() {
             <div className="flex flex-col md:flex-row items-center justify-center gap-8 text-sm text-neutral-400">
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 text-brand-primary" />
-                <span>info@lindaschmidttrades.com</span>
+                <span>hello@lindaschmidt-trades.com</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4 text-brand-primary" />
-                <span>(860) 555-0123</span>
+                <span>(475) 755-0400</span>
               </div>
               <div className="text-center">
                 <span>Connecticut LLC • Licensed & Insured</span>

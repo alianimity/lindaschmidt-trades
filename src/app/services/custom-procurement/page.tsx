@@ -45,7 +45,7 @@ const includedFeatures = [
 const pricingTiers = [
   {
     name: "Basic Tier",
-    priceRange: [500, 3000],
+    priceRange: [500, 3000] as [number, number],
     description: "Simple custom bundles with minor modifications",
     features: [
       "5–20 items per bundle",
@@ -58,7 +58,7 @@ const pricingTiers = [
   },
   {
     name: "Standard Tier", 
-    priceRange: [3001, 15000],
+    priceRange: [3001, 15000] as [number, number],
     description: "Moderately complex procurement with enhanced customization",
     features: [
       "20–100 items with multiple categories",
@@ -73,7 +73,7 @@ const pricingTiers = [
   },
   {
     name: "Premium Tier",
-    priceRange: [15001, 75000],
+    priceRange: [15001, 75000] as [number, number],
     description: "Highly customized large-scale procurement projects",
     features: [
       "100+ items or full facility outfitting",
