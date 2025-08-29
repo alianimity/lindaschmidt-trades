@@ -2,7 +2,7 @@
 
 ## Recommended Stack (primary)
 - Next.js (App Router), TypeScript
-- Tailwind CSS, shadcn/ui (Radix primitives), Framer Motion
+- Tailwind CSS v4, shadcn/ui (Radix primitives), Framer Motion (minimal usage)
 - react-hook-form + zod (validation)
 - Deployed on Vercel
 
@@ -28,8 +28,8 @@ npm i @radix-ui/react-slot framer-motion zod react-hook-form class-variance-auth
 ```
 
 ```bash
-# If you see tailwind darkMode array config error, use:
-# tailwind.config.ts → export default { darkMode: 'class', ... }
+# For Tailwind v4, create minimal config:
+# tailwind.config.ts → export default { content: ["./src/**/*.{js,ts,jsx,tsx}"], theme: { extend: {} }, plugins: [] }
 ```
 </details>
 
@@ -43,4 +43,22 @@ npm i @radix-ui/react-slot framer-motion zod react-hook-form class-variance-auth
 - Vercel for hosting (zero-config)
 - .env for API keys (never commit)
 - Preview deployments for each PR
+
+## Git Configuration
+- For specific user attribution per project:
+```bash
+git config user.name "username"
+git config user.email "username@users.noreply.github.com"
+git remote set-url origin https://username@github.com/username/repo.git
+```
+- To reset Git history if needed:
+```powershell
+Remove-Item -Recurse -Force .git
+git init
+git remote add origin https://username@github.com/username/repo.git
+git add .
+git commit -m "Initial commit"
+git branch -M main
+git push -f origin main
+```
 
